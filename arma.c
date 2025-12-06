@@ -35,7 +35,6 @@ void atira(struct bala *arma, int x, int y)
 }
 
 
-
 void atualiza_bala(struct bala *arma)
 {
 	for(int i = 0; i < NUM_BALAS; i++) {
@@ -150,5 +149,3 @@ void desenha_bala_inimigos(struct bala *arma, int id_inimigo)
 		}
 	}
 }
-
-

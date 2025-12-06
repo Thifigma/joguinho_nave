@@ -9,7 +9,7 @@ void inicia_nave(struct nave *tucano)
 {
 	tucano->x = 100;
 	tucano->y = (ALTURA_T / 2);
-	tucano->vida = 100;
+	tucano->vida = 100; // Controla a vida da nave
 	tucano->velocidade = 10;
 	tucano->sprite = al_load_bitmap("sprites/nave.png");
 	tucano->sprite_esq = al_load_bitmap("sprites/nave_esquerda.png");
@@ -18,6 +18,7 @@ void inicia_nave(struct nave *tucano)
 	tucano->largura_frame = 64;
 	tucano->altura_frame = 64;
 
+    // Se diminuir a borda diminui a possibilidade de impacto.
 	tucano->borda_x = 100;
 	tucano->borda_y = 40;
 

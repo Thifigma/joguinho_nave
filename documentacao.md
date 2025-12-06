@@ -18,30 +18,42 @@
 
 ## FIM DE JOGO
 
-Caso a vida da nave zere você é direcionado a fim de jogo, automaticamente! 
+- Caso a vida da nave zere você é direcionado a fim de jogo, automaticamente! 
 
 ## Ganho de jogo. 
 
-A única forma de ganhar o jogo é enfrentando o chefão final. 
+- A única forma de ganhar o jogo é enfrentando o chefão final. 
 
 - Todos os inimigos são passiveis de destruição, apesar de possivelmente estar 
 relativamente dificil.
 
 
 # ESPECIAL
-Existe apenas um especial no mapa, use com sabedoria! 
+
+- Existe apenas um especial no mapa, use com sabedoria! 
 
 
 ## Cenários
-Os o jogo é composto por 3 cenários
 
-1 com estrelhas brancas e amarelas
-2 com estrelhas todas azuis
-3 com estrelhas todas vemelhas -- Chefão Final. 
+- Os o jogo é composto por 3 cenários
+
+- 1 com estrelhas brancas e amarelas
+- 2 com estrelhas todas azuis
+- 3 com estrelhas todas vemelhas -- Chefão Final. 
 
 
 # INICIO DE JOGO
 
-Para iniciar o jogo basta destruir o totem inicial, conforme as orientações! 
+- Para iniciar o jogo basta destruir o totem inicial, conforme as orientações! 
 
 # CUIDADO PARA NÃO IR DE BASE 
+
+# Instalando a biblioteca allegro no GNU/Linux base Debian/Ubunto.
+
+-- 
+
+sudo apt install liballegro-audio5-dev liballegro-dialog5-dev \
+                 liballegro-acodec5-dev liballegro-video5-dev \
+                 liballegro-physfs5-dev
+
+--

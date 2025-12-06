@@ -97,7 +97,7 @@ int main()
 	al_clear_to_color(al_map_rgb(0,0,0));
 	al_flip_display();
 	al_start_timer(timer);	
-	while(! sair) {
+	while(!sair) {
 
 		al_wait_for_event(fila_eventos, &evento);
 
