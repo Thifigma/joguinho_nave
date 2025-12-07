@@ -1,5 +1,7 @@
 # DOCUMENTAÇÂO BÁSICA DO JOGO. 
 
+- Para compilar digite make no terminal e depois ./jogo
+
 
 ## Movimentação e Tiros. 
 
@@ -45,6 +47,7 @@ relativamente dificil.
 # INICIO DE JOGO
 
 - Para iniciar o jogo basta destruir o totem inicial, conforme as orientações! 
+
 
 # CUIDADO PARA NÃO IR DE BASE 
 
