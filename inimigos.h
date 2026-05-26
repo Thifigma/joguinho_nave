@@ -19,11 +19,11 @@ struct skin {
 	int borda_y;
 
 	ALLEGRO_BITMAP *sprite;
+
 	int frame_atual;
 	int num_frames;
 	int largura_frame;
 	int altura_frame;
-
 
 	struct bala arma[NUM_BALAS_INIMIGOS]; 
 };
@@ -53,12 +53,10 @@ void inicia_lomeu(struct skin *lomeu);
 void inicia_spin(struct skin *spin);
 void inicia_chefao(struct skin *chefao);
 
-
 void atualiza_barto(struct skin *i);
 void atualiza_lomeu(struct skin *i);
 void atualiza_spin(struct skin *i);
 void atualiza_chefao(struct skin *i);
-
 
 void desenha_barto(struct skin *barto);
 void desenha_lomeu(struct skin *lomeu);
@@ -74,22 +72,22 @@ void inicia_gris(struct skin *gris);
 void inicia_loor(struct skin *loor);
 void inicia_chefao_f2(struct skin *chefao_f2);
 
-void desenha_peixoto(struct skin *peixoto);
-void desenha_paladino(struct skin *paladino);
-void desenha_gris(struct skin *gris);
-void desenha_loor(struct skin *loor);
-void desenha_chefao_f2(struct skin *chefao_f2);
-
 void atualiza_peixoto(struct skin *i);
 void atualiza_paladino(struct skin *i);
 void atualiza_loor(struct skin *i);
 void atualiza_gris(struct skin *i);
 void atualiza_chefao_f2(struct skin *i);
 
+void desenha_peixoto(struct skin *peixoto);
+void desenha_paladino(struct skin *paladino);
+void desenha_gris(struct skin *gris);
+void desenha_loor(struct skin *loor);
+void desenha_chefao_f2(struct skin *chefao_f2);
+
 /* Final. */
 void inicia_cf(struct skin *cf);
-void desenha_cf(struct skin *cf);
 void atualiza_cf(struct skin *cf);
+void desenha_cf(struct skin *cf);
 
 
 /* Destrutor. */

@@ -15,6 +15,7 @@ struct bala {
 	int x;
 	int y;
 	int velocidade;	
+    int lado;
 	char ativo;
 };
 
@@ -24,7 +25,7 @@ void inicia_bala(struct bala *arma);
 
 /*Essa função é responsável por atirar um projetil. 
 * Toda vez que a tecla espaço é apertada um projetil é disparado. */
-void atira(struct bala *arma, int x, int y);
+void atira(struct bala *arma, int x, int y, int *teclas);
 
 /* Essa função é responsável por realizar a movimentação da bala. */
 void atualiza_bala(struct bala *arma);
@@ -35,7 +36,7 @@ void desenha_bala(struct bala *arma);
 
 /* Arma inimigos. 
 *	Todas as funções abaixo são homologas as de cima, porém
-*	é utilizada apenas pelo inimigos. 
+*	é utilizada apenas pelos inimigos. 
 */
 void inicia_bala_inimigos(struct bala *arma);
 void atira_inimigos(struct bala *arma, int x, int y);

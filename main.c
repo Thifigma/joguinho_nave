@@ -88,15 +88,18 @@ int main()
 	ALLEGRO_EVENT evento;
 
 
+
 	/* Captura de eventos. */
 	al_register_event_source(fila_eventos, al_get_keyboard_event_source());	
 	al_register_event_source(fila_eventos, al_get_display_event_source(janela));	
 	al_register_event_source(fila_eventos, al_get_timer_event_source(timer));		
 	
 
+
 	al_clear_to_color(al_map_rgb(0,0,0));
 	al_flip_display();
 	al_start_timer(timer);	
+
 	while(!sair) {
 
 		al_wait_for_event(fila_eventos, &evento);
@@ -105,7 +108,7 @@ int main()
 
 			desenha_fundo(fundo, fase);
 			
-			/*Fim de jogo. */	
+			/* Fim de jogo. */	
 			if(tucano.vida <= 0) {
 				fase = 4;
 			}			
@@ -118,6 +121,7 @@ int main()
 			if(chefao_f2.vida <= 0 && tucano.vida > 0)
 				fase = 3;
 
+            /*Chefão final. */
 			if(cf.vida <= 0 && tucano.vida > 0)
 				fase = 5;
 		
@@ -141,8 +145,8 @@ int main()
 				(ALTURA_T - 300) - al_get_font_ascent(fonte) / 2 + 1, 
 				ALLEGRO_ALIGN_CENTRE, "DESTRUA O TOTEM PARA INICIAR O JOGO!");	
 
-				desenha_toten(&toten);
-				colisao_bala(tucano.arma, &toten);			
+				//desenha_toten(&toten);
+				//colisao_bala(tucano.arma, &toten);			
 				
 				if(toten.vida <= 0)
 					fase = 1;
@@ -330,7 +334,7 @@ int main()
 
 				case ALLEGRO_KEY_SPACE:
 					teclas[ESPACO] = 1; 
-					atira(tucano.arma, tucano.x, tucano.y);
+					atira(tucano.arma, tucano.x, tucano.y, teclas);
 				break;
 			}
 		}           

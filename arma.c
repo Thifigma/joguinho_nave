@@ -19,7 +19,7 @@ void inicia_bala(struct bala *arma)
 }
 
 
-void atira(struct bala *arma, int x, int y)
+void atira(struct bala *arma, int x, int y, int *teclas)
 {
 	for(int i = 0; i < NUM_BALAS; i++) {
 			
@@ -28,6 +28,11 @@ void atira(struct bala *arma, int x, int y)
 			arma[i].x = x + 5;
 			arma[i].y = y;			
 			arma[i].ativo = 1;
+
+            if(teclas[ESQUERDA])
+                arma[i].lado = 1; // nave indo para a esquerda
+            else
+                arma[i].lado = 0; // nave indo para a direita
 
 			break; /* Garante que apenas uma bala vai ser disparada!  */
 		}
@@ -41,12 +46,18 @@ void atualiza_bala(struct bala *arma)
 			
 		if(arma[i].ativo) {
 			
-			/* Movimentação a direita de cada projetil. */
-				arma[i].x += arma[i].velocidade;	
+            /* Movimentação do projetil. */
+            if(arma[i].lado)
+                arma[i].x -= arma[i].velocidade;	
+            else
+                arma[i].x += arma[i].velocidade;	
 
 			/* Se a bala passar da tela ela é re-inserida na arma. */
-			if(arma[i].x > LARGURA_T) 
+			if(arma[i].x  > LARGURA_T || arma[i].x < 0) 
 				arma[i].ativo = 0;
+
+            if(arma[i].y > ALTURA_T)
+                arma[i].ativo = 0;
 		}
 	}
 }

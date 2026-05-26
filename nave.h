@@ -44,6 +44,7 @@ void inicia_nave(struct nave *tucano);
 void atualiza_nave(struct nave *tucano, int *teclas);
 
 int atualiza_nave_fim_de_jogo(struct nave *tucano);
+
 int atualiza_nave_ganha_jogo(struct nave *tucano);
 
 void desenha_nave(struct nave *t, int *teclas);

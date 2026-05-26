@@ -30,11 +30,6 @@
 relativamente dificil.
 
 
-# ESPECIAL
-
-- Existe apenas um especial no mapa, use com sabedoria! 
-
-
 ## Cenários
 
 - Os o jogo é composto por 3 cenários
@@ -48,8 +43,6 @@ relativamente dificil.
 
 - Para iniciar o jogo basta destruir o totem inicial, conforme as orientações! 
 
-
-# CUIDADO PARA NÃO IR DE BASE 
 
 # Instalando a biblioteca allegro no GNU/Linux base Debian/Ubunto.
 
