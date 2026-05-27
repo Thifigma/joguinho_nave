@@ -1,9 +1,9 @@
 #include <allegro5/allegro5.h>
 #include <allegro5/allegro_image.h>
 #include <stdio.h>
-#include "nave.h"
-#include "mapa.h"
-#include "arma.h"
+#include "../include/nave.h"
+#include "../include/mapa.h"
+#include "../include/arma.h"
 
 void inicia_nave(struct nave *tucano)
 {
@@ -11,8 +11,8 @@ void inicia_nave(struct nave *tucano)
 	tucano->y = (ALTURA_T / 2);
 	tucano->vida = 100; // Controla a vida da nave
 	tucano->velocidade = 10;
-	tucano->sprite = al_load_bitmap("sprites/nave.png");
-	tucano->sprite_esq = al_load_bitmap("sprites/nave_esquerda.png");
+	tucano->sprite = al_load_bitmap("assets/sprites/nave.png");
+	tucano->sprite_esq = al_load_bitmap("assets/sprites/nave_esquerda.png");
 	tucano->frame_atual = 0;
 	tucano->num_frames = 1;
 	tucano->largura_frame = 64;

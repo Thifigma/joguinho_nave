@@ -3,8 +3,8 @@
 
 #include <math.h>
 
-#include "mapa.h"
-#include "arma.h"
+#include "../include/mapa.h"
+#include "../include/arma.h"
 
 
 void inicia_bala(struct bala *arma)

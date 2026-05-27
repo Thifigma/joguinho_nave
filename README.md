@@ -1,6 +1,6 @@
 # Joguinho de nave em C
 
-![Versão](https://img.shields.io/badge/versão-1.0.0-blue)
+![Versão](https://img.shields.io/badge/versão-0.0.1-blue)
 ![Plataforma](https://img.shields.io/badge/Linux-lightgrey)
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
 

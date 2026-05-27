@@ -3,9 +3,9 @@
 #include <allegro5/allegro_image.h>
 #include <stdio.h>
 #include <math.h>
-#include "mapa.h"
-#include "inimigos.h"
-#include "arma.h"
+#include "../include/mapa.h"
+#include "../include/inimigos.h"
+#include "../include/arma.h"
 
 
 /*Barto*/
@@ -16,7 +16,7 @@ void inicia_barto(struct skin *barto)
 	barto->y = (ALTURA_T - 100);
 	barto->vida = 100;
 	barto->velocidade = 4;
-	barto->sprite = al_load_bitmap("sprites/inimigos/fase_1/barto.png");
+	barto->sprite = al_load_bitmap("assets/sprites/inimigos/fase_1/barto.png");
 	barto->frame_atual = 0;
 	barto->num_frames = 1;
 	barto->largura_frame = 128;
@@ -66,7 +66,7 @@ void inicia_lomeu(struct skin *lomeu)
 	lomeu->y = ((ALTURA_T / 2)); //+ 150);
 	lomeu->vida = 100;
 	lomeu->velocidade = 6;
-	lomeu->sprite = al_load_bitmap("sprites/inimigos/fase_1/lomeu.png");
+	lomeu->sprite = al_load_bitmap("assets/sprites/inimigos/fase_1/lomeu.png");
 	lomeu->frame_atual = 0;
 	lomeu->num_frames = 1;
 	lomeu->largura_frame = 128;
@@ -119,7 +119,7 @@ void inicia_spin(struct skin *spin)
 	spin->y = ((ALTURA_T / 2) + 130);
 	spin->vida = 100;
 	spin->velocidade = 6;
-	spin->sprite = al_load_bitmap("sprites/inimigos/fase_1/spin.png");
+	spin->sprite = al_load_bitmap("assets/sprites/inimigos/fase_1/spin.png");
 	spin->frame_atual = 0;
 	spin->num_frames = 1;
 	spin->largura_frame = 128;
@@ -167,7 +167,7 @@ void inicia_chefao(struct skin *chefao)
 	chefao->y = ((ALTURA_T / 2) - 200); //+ 150);
 	chefao->vida = 700;
 	chefao->velocidade = 3;
-	chefao->sprite = al_load_bitmap("sprites/inimigos/fase_1/chefao_f1.png");
+	chefao->sprite = al_load_bitmap("assets/sprites/inimigos/fase_1/chefao_f1.png");
 	chefao->frame_atual = 0;
 	chefao->num_frames = 1;
 	chefao->largura_frame = 315;
@@ -228,7 +228,7 @@ void inicia_peixoto(struct skin *peixoto)
 	peixoto->y = ((ALTURA_T / 2) - 100);
 	peixoto->vida = 200;
 	peixoto->velocidade = 4;
-	peixoto->sprite = al_load_bitmap("sprites/inimigos/fase_2/peixoto.png");
+	peixoto->sprite = al_load_bitmap("assets/sprites/inimigos/fase_2/peixoto.png");
 	peixoto->frame_atual = 0;
 	peixoto->num_frames = 1;
 	peixoto->largura_frame = 128;
@@ -278,7 +278,7 @@ void inicia_paladino(struct skin *paladino)
 	paladino->y = (ALTURA_T / 2) + 50;
 	paladino->vida = 200;
 	paladino->velocidade = 7;
-	paladino->sprite = al_load_bitmap("sprites/inimigos/fase_2/paladino.png");
+	paladino->sprite = al_load_bitmap("assets/sprites/inimigos/fase_2/paladino.png");
 	paladino->frame_atual = 0;
 	paladino->num_frames = 1;
 	paladino->largura_frame = 128;
@@ -330,7 +330,7 @@ void inicia_loor(struct skin *loor)
 	loor->y = (ALTURA_T  - 500);
 	loor->vida = 200;
 	loor->velocidade = 7;
-	loor->sprite = al_load_bitmap("sprites/inimigos/fase_2/loor.png");
+	loor->sprite = al_load_bitmap("assets/sprites/inimigos/fase_2/loor.png");
 	loor->frame_atual = 0;
 	loor->num_frames = 1;
 	loor->largura_frame = 128;
@@ -370,7 +370,7 @@ void inicia_gris(struct skin *gris)
 	gris->y = (ALTURA_T / 2) - 200;
 	gris->vida = 350;
 	gris->velocidade = 6.5;
-	gris->sprite = al_load_bitmap("sprites/inimigos/fase_2/gris.png");
+	gris->sprite = al_load_bitmap("assets/sprites/inimigos/fase_2/gris.png");
 	gris->frame_atual = 0;
 	gris->num_frames = 1;
 	gris->largura_frame = 370;
@@ -422,7 +422,7 @@ void inicia_chefao_f2(struct skin *chefao_f2)
 	chefao_f2->y = (ALTURA_T / 2) - 200;
 	chefao_f2->vida = 850;
 	chefao_f2->velocidade = 5;
-	chefao_f2->sprite = al_load_bitmap("sprites/inimigos/fase_2/chefe_f2.png");
+	chefao_f2->sprite = al_load_bitmap("assets/sprites/inimigos/fase_2/chefe_f2.png");
 	chefao_f2->frame_atual = 0;
 	chefao_f2->num_frames = 1;
 	chefao_f2->largura_frame = 250;
@@ -472,7 +472,7 @@ void inicia_cf(struct skin *cf)
 	cf->y = (ALTURA_T / 2) - 300;
 	cf->vida = 400;
 	cf->velocidade = 10;
-	cf->sprite = al_load_bitmap("sprites/inimigos/final/cf.png");
+	cf->sprite = al_load_bitmap("assets/sprites/inimigos/final/cf.png");
 	cf->frame_atual = 0;
 	cf->num_frames = 1;
 	cf->largura_frame = 754;
@@ -525,7 +525,7 @@ void inicia_toten(struct skin *toten)
 	toten->y = (ALTURA_T - 245);
 	toten->vida = 50;
 	toten->velocidade = 0;
-	toten->sprite = al_load_bitmap("sprites/inimigos/toten.png");
+	toten->sprite = al_load_bitmap("assets/sprites/inimigos/toten.png");
 	toten->frame_atual = 0;
 	toten->num_frames = 1;
 	toten->largura_frame = 128;

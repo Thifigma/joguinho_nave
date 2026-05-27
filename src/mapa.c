@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-#include "mapa.h"
-#include "nave.h"
+#include "../include/mapa.h"
+#include "../include/nave.h"
 
 void inicia_fundo(struct plano fundo[NUM_PLANOS][NUM_ESTRELAS])
 {
@@ -39,7 +39,7 @@ void inicia_explosao(struct explosao *f)
 {
 	for(int i = 0; i < 8; i++) {
 		char nome[50];
-		sprintf(nome, "sprites/explosao/%d.png", i+1);
+		sprintf(nome, "assets/sprites/explosao/%d.png", i+1);
 		f->sprite[i] = al_load_bitmap(nome);
 	}	
 
@@ -254,7 +254,7 @@ void colisao_nave(struct nave *tucano, struct skin *i)
 
 void inicia_especial(struct especial *poder)
 {
-	poder->img = al_load_bitmap("sprites/especial.png");
+	poder->img = al_load_bitmap("assets/sprites/especial.png");
 
 	poder->frame_atual = 0;
 	poder->num_frames = 1;	
