@@ -145,8 +145,8 @@ int main()
 				(ALTURA_T - 300) - al_get_font_ascent(fonte) / 2 + 1, 
 				ALLEGRO_ALIGN_CENTRE, "DESTRUA O TOTEM PARA INICIAR O JOGO!");	
 
-				//desenha_toten(&toten);
-				//colisao_bala(tucano.arma, &toten);			
+				desenha_toten(&toten);
+				colisao_bala(tucano.arma, &toten);			
 				
 				if(toten.vida <= 0)
 					fase = 1;
