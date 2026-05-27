@@ -4,20 +4,20 @@ allegro = $(shell pkg-config allegro-5 allegro_primitives-5 allegro_image-5 alle
 main: main.o mapa.o nave.o arma.o inimigos.o
 	gcc $(flags) -o jogo main.o mapa.o nave.o arma.o inimigos.o $(allegro) -lm
 
-main.o: main.c
-	gcc -c $(flags) $(allegro) main.c
+main.o: src/main.c
+	gcc -c $(flags) $(allegro) src/main.c
 
-mapa.o: mapa.c mapa.h
-	gcc -c $(flags) $(allegro) mapa.c
+mapa.o: src/mapa.c include/mapa.h
+	gcc -c $(flags) $(allegro) src/mapa.c
 
-nave.o: nave.c nave.h
-	gcc -c $(flags) $(allegro) nave.c
+nave.o: src/nave.c include/nave.h
+	gcc -c $(flags) $(allegro) src/nave.c
 
-arma.o: arma.c arma.h
-	gcc -c $(flags) $(allegro) arma.c
+arma.o: src/arma.c include/arma.h
+	gcc -c $(flags) $(allegro) src/arma.c
 
-inimigos.o: inimigos.c inimigos.h
-	gcc -c $(flags) $(allegro) inimigos.c -lm
+inimigos.o: src/inimigos.c include/inimigos.h
+	gcc -c $(flags) $(allegro) src/inimigos.c -lm
 
 clean:
 	rm -f *.o *.gch jogo

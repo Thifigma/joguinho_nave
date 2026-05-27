@@ -6,9 +6,9 @@
 
 #include <stdio.h>
 
-#include "nave.h"
-#include "mapa.h"
-#include "inimigos.h"
+#include "../include/nave.h"
+#include "../include/mapa.h"
+#include "../include/inimigos.h"
 
 
 int main()
@@ -26,7 +26,7 @@ int main()
 	int teclas[5] = {0, 0, 0, 0, 0};	
 
 	ALLEGRO_FONT *fonte = NULL;
-	fonte = al_load_font("./sprites/fonte.ttf", 13, 0);
+	fonte = al_load_font("assets/sprites/fonte.ttf", 13, 0);
 	
 	/*Estruturas fundamentais. */
 
@@ -308,7 +308,7 @@ int main()
 
 			/* Atualização da tela. */
 			al_flip_display();
-    			al_clear_to_color(al_map_rgb(0,0,0));
+    		al_clear_to_color(al_map_rgb(0,0,0));
 		}          
 		
 
