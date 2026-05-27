@@ -5,7 +5,7 @@
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
 
 <!-- GIF de demonstração do jogo -->
-![Gameplay Demo](docs/jogo_teste.gif)
+![Gameplay Demo](docs/jogo_teste_1.gif)
 
 ## Sobre o Jogo
 
